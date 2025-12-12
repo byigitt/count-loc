@@ -1,0 +1,33 @@
+{
+  "name": "count-loc",
+  "version": "1.0.0",
+  "description": "A CLI tool to count lines of code, comments, TODOs, and blanks",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "loc": "./bin/cli.js"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "dev": "node bin/cli.js ."
+  },
+  "keywords": [
+    "loc",
+    "lines-of-code",
+    "code-counter",
+    "cli"
+  ],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.11.0",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "glob": "^10.4.5"
+  },
+  "devDependencies": {
+    "vitest": "^4.0.15"
+  }
+}
